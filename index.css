@@ -1,5 +1,23 @@
 body{
+    background-color: white;
+    overflow: hidden;
+}
+
+#left-background{
     background-color: #ffb500;
+    position: absolute;
+    
+
+    width: 50rem;
+    height: 80rem;
+
+    left: -5rem;
+    top: -18rem;
+
+    transform: rotate(7deg);
+
+    z-index: -1;
+    
 }
 
 .container {
