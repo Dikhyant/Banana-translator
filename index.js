@@ -2,7 +2,7 @@ const entryMessage = document.querySelector("#entry-message");
 const translateButton = document.getElementById("translate-btn");
 const display = document.getElementById("display-text");
 
-var displayText = "Welcome to minion translator. Enter something to speak to minions."
+var displayText = ""
 
 display.innerHTML = displayText;
 
@@ -12,7 +12,7 @@ translateButton.addEventListener('click' , ()=>{
         .then( response => {
             response.json()
                 .then( data=> {
-                    display.innerHTML = data.contents.translated
+                    display.value = data.contents.translated
                 })
         })
     //display.innerHTML = entryMessage.value;
@@ -21,7 +21,3 @@ translateButton.addEventListener('click' , ()=>{
 /* entryMessage.addEventListener("input" , ()=>{
     console.log("Message = " + entryMessage.value);
 }) */
-
-display.addEventListener("click", ()=>{
-    console.log("Clicked display area");
-})

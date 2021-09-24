@@ -8,29 +8,65 @@
     <title>Minion translator</title>
 </head>
 <body>
-    
 
-    <div class="container">
-        <div class="empty-box">
-
-        </div>
-        <div id="display" style="display: flex; flex-direction: row; align-items: center;" >
-            <span id="display-text" style="flex: 1;">
-
-            </span>
-        </div>
-        <div class="empty-box">
-
-        </div>
+    <div id="page-title">
+        <span>Banana</span>
+        <span>Translator</span>
     </div>
 
-    <div id="user-interaction-container">
+    <div style="flex-direction: row; display: flex; font-size: 2rem; white-space: pre; text-align: center; margin-top: 3rem; 
+        color: #CB9000; font-family: Arial, Helvetica, sans-serif;
+    ">
+
+        <div style="flex: 0.6;"></div>
+
+        <div style="flex: 1;">
+            Write something for
+            minions here
+        </div>
+
+        <div style="flex: 2.5;"></div>
+
+        <div style="flex: 1;">
+            See your message
+            in minions language.
+        </div>
+
+        <div style="flex: 1;"></div>
+
+    </div>
+
+    <div class="container">
+
+        <div style="flex: 1;"></div>
+
+        <textarea id="entry-message" style="flex: 2;" placeholder="Enter a message for minions">
+
+        </textarea>
+
+        <div style="flex: 1;"></div>
+
+        <div id="translate-btn" style="flex: 1;">
+            <div class="btn-text">Translate</div>
+        </div>
+
+        <div style="flex: 1;"></div>
+
+        <div id="display" style="display: flex; flex: 2; flex-direction: row; align-items: center;" >
+            <textarea readonly id="display-text" style="flex: 1; width: inherit; height: inherit; text-align: center;">
+
+            </textarea>
+        </div>
+
+        <div style="flex: 1;"></div>
+
+
+
+    <!-- <div id="user-interaction-container">
         <div style="display: flex; flex-direction: row; flex: 1;">
             <div style="flex: 1;"></div>
 
-            <textarea id="entry-message" style="flex: 2;">
-
-            </textarea>
+            
 
             <div style="flex: 1;"></div>
         </div>
@@ -38,15 +74,13 @@
         <div style="display: flex; flex-direction: row; flex: 1; margin-top: 2rem;">
             <div style="flex: 1;"></div>
 
-            <div id="translate-btn">
-                <div>Translate</div>
-            </div>
+            
 
             <div style="flex: 1;"></div>
         </div>
 
         
-    </div>
+    </div> -->
 
     <div id="left-background">
 

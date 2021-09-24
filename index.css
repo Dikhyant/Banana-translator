@@ -1,6 +1,7 @@
 body{
     background-color: white;
     overflow: hidden;
+
 }
 
 #left-background{
@@ -8,13 +9,13 @@ body{
     position: absolute;
     
 
-    width: 50rem;
-    height: 80rem;
+    width: 96rem;
+    height: 9rem;
 
-    left: -5rem;
-    top: -18rem;
+    left: 0rem;
+    top: 0rem;
 
-    transform: rotate(7deg);
+    transform: rotate(0deg);
 
     z-index: -1;
     
@@ -23,6 +24,21 @@ body{
 .container {
     display: flex;
     flex-direction: row;
+    flex: 1;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+}
+
+#page-title {
+    font-size: 6rem;
+    margin-left: 23rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
 }
 
 .empty-box {
@@ -33,38 +49,59 @@ body{
 }
 
 #display {
-    flex: 10;
+    
     white-space: pre;
     border-width: 0.1rem;
-    border-color: black;
     border-radius: 10px;
-    /* border-style: solid; */
+    border-width: 1rem;
+    border-color: #ffb500;
+    border-style: solid;
 
     text-align: center;
 
-    background-color: rgb(116, 90, 0);
+    color: #ffb500;
 
     height: 10rem;
+    width: 20rem;
 
-    margin-top: 16rem;
+    margin-top: 0rem;
 }
 
 #display-text {
-    color: white;
-    font-size: 2rem;
+
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #translate-btn {
     background-color: white;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: #ffb500;
+    border-radius: 6rem;
+
+    box-shadow: -3px 3px rgba(0,0,0,0.3);
 
     width: 12rem;
-    height: 3rem;
+    height: 10rem;
 
     justify-content: center;
     align-items: center;
 
     display: flex;
+}
+
+#translate-btn:hover{
+    box-shadow: -4px 4px rgba(0,0,0,0.5);
+    border-color: #CB9000;
+    cursor:pointer;
+}
+
+#translate-btn .btn-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #ffb500;
 }
 
 #user-interaction-container{
@@ -75,4 +112,16 @@ body{
     margin-top: 3rem;
 
     align-items: stretch;
+}
+
+#entry-message{
+    height: 10rem;
+    width: 20rem;
+
+    border-width: 0.1rem;
+    border-radius: 10px;
+    border-width: 1rem;
+    border-color: #ffb500;
+    border-style: solid;
+
 }
